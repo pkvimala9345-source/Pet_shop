@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Paws Pet Shop🐶😽</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4efe6;
+            text-align: center;
+        }
+
+        header {
+            background: orange;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            display: none;
+            padding: 40px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .card {
+            display: inline-block;
+            width: 250px;
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.querySelectorAll("section");
+            pages.forEach(function(page) {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(pageId).classList.add("active");
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>🐶 Happy Paws Pet Shop 🐱</h1>
+    <p>Your One-Stop Shop For All Pet Needs!</p>
+</header>
+
+<nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('products')">Products</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="active">
+    <h2>Welcome to Happy Paws</h2>
+    <p>😘We care for your pets like family 💗</p>
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" width="300">
+</section>
+
+<!-- PRODUCTS PAGE -->
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
+        <h3>Dogs</h3>
+        <p>Healthy and playful puppies available🐶.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131">
+        <h3>Cats</h3>
+        <p>Cute and lovely kittens ready for adoption😽.</p>
+    </div>
+
+    <div class="card">
+        
+        <h3>Pet Food</h3>
+        <p>High-quality and nutritious pet food.</p>
+    </div>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>🐶 About Us 🐱
+🏪 Welcome to Happy Paws Pet Shop.
+❤️ We love and care for all pets.
+🛍️ We provide quality food, toys, and accessories.
+🐾 Your pet’s happiness is our priority.
+🌟 Thank you for trusting us.
+            </p>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p> 🏠 Address
+Happy Paws Pet Shop
+123 Main Street,
+Chennai, Tamil Nadu – 600001</p>
+    <p>📧 Email
+happypaws@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Happy Paws Pet Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
